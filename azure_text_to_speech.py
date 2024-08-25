@@ -4,6 +4,9 @@ import azure.cognitiveservices.speech as speechsdk
 from gtts import gTTS
 from pydub import AudioSegment
 import pygame
+from dotenv import load_dotenv
+
+load_dotenv("api.env")
 
 AZURE_VOICES = [
     "en-US-DavisNeural",
